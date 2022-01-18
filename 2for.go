@@ -8,7 +8,5 @@ func main() {
 			continue
 		}
 		fmt.Println(n)
-
 	}
-
 }
