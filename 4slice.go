@@ -5,9 +5,10 @@ import (
 )
 
 func main() {
-	//切片初始化 长度最少是2
-	slice1 := make([]string, 3)
-	slice1[0] = "one"
+	//切片初始化 两种方式
+	var slice1 []string
+	// 0是初始化长度
+	//slice1 := make([]string, 0)
 	slice1 = append(slice1, "two")
 	slice1 = append(slice1, "3")
 	slice1 = append(slice1, "3")
