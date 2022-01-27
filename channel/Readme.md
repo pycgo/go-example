@@ -13,4 +13,7 @@ Go语言的并发是基于 goroutine 的，goroutine 类似于线程，但并非
 多个 goroutine 中，Go语言使用通道（channel）进行通信，通道是一种内置的数据结构，可以让用户在不同的 goroutine 之间同步发送具有类型的消息。这让编程模型更倾向于在 goroutine 之间发送消息，而不是让多个 goroutine 争夺同一个数据的使用权。
 
 程序可以将需要并发的环节设计为生产者模式和消费者的模式，将数据放入通道。通道另外一端的代码将这些数据进行并发计算并返回结果，如下图所示。
+
+
+
 ![image](https://user-images.githubusercontent.com/55949132/151321786-bbac7943-465f-45f3-bd8a-697de38e48b4.png)
